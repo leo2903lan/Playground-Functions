@@ -25,15 +25,14 @@ function splitSentence(frase) {
 }
  
 
-
-
-
-
-
 // Desafio 4
-function concatName() {
+function concatName(palavras) {
   // seu código aqui
+  let frase = palavras[0] + ', ' + palavras[palavras.length-1];
+  console.log(frase);
 }
+palavras = ['Lucas','Cassiano','Ferraz','Paolillo']
+concatName(palavras)
 
 // Desafio 5
 function footballPoints() {
