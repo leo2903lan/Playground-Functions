@@ -2,17 +2,19 @@
 function compareTrue(a, b) {
   // seu código aqui
   if (a === true && b === true) {
-      return true;
+    return true;
   } else {
-      return false;
+    return false;
   }
 }
-compareTrue(false, false);
+
 
 // Desafio 2
-function calcArea() {
+function calcArea(base, altura) {
   // seu código aqui
+  return (base * altura) / 2;
 }
+
 
 // Desafio 3
 function splitSentence() {
