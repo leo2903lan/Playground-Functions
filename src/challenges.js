@@ -28,10 +28,11 @@ function splitSentence(frase) {
 // Desafio 4
 function concatName(palavras) {
   // seu código aqui
-  let frase = palavras[0] + ', ' + palavras[palavras.length-1];
-  return frase;
+  let frase = palavras[palavras.length-1] + ', ' + palavras[0];
+  console.log(frase)
 }
-
+palavras = ['Lucas','Cassiano','Feraaz','Paolillo']
+concatName(palavras)
 
 // Desafio 5
 function footballPoints() {
