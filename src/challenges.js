@@ -3,7 +3,7 @@ function compareTrue(a, b) {
   // seu código aqui
   if (a === true && b === true) {
     return true;
-  } else {
+  }else{
     return false;
   }
 }
@@ -17,9 +17,18 @@ function calcArea(base, altura) {
 
 
 // Desafio 3
-function splitSentence() {
+function splitSentence(frase) {
   // seu código aqui
+  let palavras = frase.split(' ');
+    
+  return palavras;
 }
+ 
+
+
+
+
+
 
 // Desafio 4
 function concatName() {
