@@ -43,7 +43,8 @@ function footballPoints(wins, ties) {
 // Desafio 6
 function highestCount(valores) {
   // seu código aqui
-  let ordem = valores.sort();
+  
+  let ordem = valores.sort((a,b)=>a-b)
   let quantosIguais = [];
   
   for(let index of ordem){    
@@ -54,6 +55,8 @@ function highestCount(valores) {
   return quantosIguais.length;
 }
   
+
+
 
 
 // Desafio 7
