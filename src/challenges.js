@@ -89,15 +89,67 @@ function fizzBuzz(numeros) {
 
 
 
-
-
 // Desafio 9
-function encode() {
+function encode(vogais) {
   // seu código aqui
+  let letrasMinusculas = vogais.toLowerCase();
+  let codificado = []
+  for (let letra of letrasMinusculas) {
+
+    if (letra === 'a') {
+      letra = 1;
+      codificado.push(letra);
+    } else if (letra === 'e') {
+      letra = 2;
+      codificado.push(letra);
+    } else if (letra === 'i') {
+      letra = 3;
+      codificado.push(letra);
+    } else if (letra === 'i') {
+      letra = 4;
+      codificado.push(letra);
+    } else if (letra === 'u') {
+      letra = 5;
+      codificado.push(letra);
+    } else {
+      codificado.push(letra);
+    }
+  }
+  return codificado.join(' '); // consegui descobrir o prototype .join() e como utilizar os parametro dele juntar os elementos da string na documentação mozilla
 }
-function decode() {
+
+
+
+function decode(codigo) {
   // seu código aqui
+  let fraseDecodificada = [];
+
+  for (numero of codigo) {
+    if (numero == 1) {
+      numero = 'a';
+      fraseDecodificada.push(numero);
+    } else if (numero == 2) {
+      numero = 'e';
+      fraseDecodificada.push(numero);
+    } else if (numero == 3) {
+      numero = 'i';
+      fraseDecodificada.push(numero);
+    } else if (numero == 4) {
+      numero = '0';
+      fraseDecodificada.push(numero);
+    } else if (numero == 5) {
+      numero = 'u';
+      fraseDecodificada.push(numero);
+    } else {
+      fraseDecodificada.push(numero);
+    }
+
+  }
+
+  return fraseDecodificada.join(' ');
 }
+
+
 
 module.exports = {
   calcArea,
