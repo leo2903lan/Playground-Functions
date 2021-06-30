@@ -1,9 +1,9 @@
 // Desafio 1
 function compareTrue(a, b) {
   // seu código aqui
-  if (a === 'true' && b === 'true') {
+  if(a === 'true' && b === 'true'){
         console.log('true');
-  } else {
+  }else{
         console.log('false');
   }
 }
