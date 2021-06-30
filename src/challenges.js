@@ -3,11 +3,10 @@ function compareTrue(a, b) {
   // seu código aqui
   if (a === true && b === true) {
     return true;
-  }else{
+  } else {
     return false;
   }
 }
-
 
 // Desafio 2
 function calcArea(base, altura) {
@@ -15,53 +14,54 @@ function calcArea(base, altura) {
   return (base * altura) / 2;
 }
 
-
 // Desafio 3
 function splitSentence(frase) {
   // seu código aqui
   let palavras = frase.split(' ');
   return palavras;
 }
- 
 
 // Desafio 4
 function concatName(palavras) {
   // seu código aqui
-  let frase = palavras[palavras.length-1] + ', ' + palavras[0];
+  let frase = palavras[palavras.length - 1] + ', ' + palavras[0];
   return frase;
 }
 
 // Desafio 5
 function footballPoints(wins, ties) {
   // seu código aqui
-  let points = (wins * 3) + (ties*1);
+  let points = wins * 3 + ties * 1;
   return points;
 }
-
 
 // Desafio 6
 function highestCount(valores) {
   // seu código aqui
-  
-  let ordem = valores.sort((a,b)=>a-b)
+
+  let ordem = valores.sort((a, b) => a - b);
   let quantosIguais = [];
-  
-  for(let index of ordem){    
-    if(index === ordem[ordem.length-1]){
+
+  for (let index of ordem) {
+    if (index === ordem[ordem.length - 1]) {
       quantosIguais.push(index);
     }
   }
   return quantosIguais.length;
 }
-  
-
-
-
 
 // Desafio 7
-function catAndMouse() {
+function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
+  if (cat1 === cat2) {
+    return 'os gatos trombam e o rato foge';
+  } else if (mouse - cat1 > mouse - cat2) {
+    return 'cat1';
+  } else {
+    return 'cat2';
+  }
 }
+
 
 // Desafio 8
 function fizzBuzz() {
