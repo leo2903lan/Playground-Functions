@@ -1,3 +1,4 @@
+/* eslint-disable complexity */
 // Desafio 1
 function compareTrue(a, b) {
   // seu código aqui
@@ -39,7 +40,7 @@ function footballPoints(wins, ties) {
 function highestCount(valores) {
   // seu código aqui
 
-  let ordem = valores.sort((a, b) => a - b);
+  let ordem = valores.sort((a, b) => a - b);// função encontrada na documentação, para ser utilizada dentro do .sort() para ordenar os números sem ser por UNICODE, a-b fica crescente e b-a fica descrescente.
   let quantosIguais = [];
 
   for (let index of ordem) {
@@ -55,17 +56,14 @@ function highestCount(valores) {
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
-  if ((mouse - cat1) === (mouse - cat2)) {
-    console.log('os gatos trombam e o rato foge');
-  } else if ((mouse - cat1) > (mouse - cat2)) {
-    console.log('cat1');
+  if (cat1 - mouse === cat2 - mouse) {
+    return 'os gatos trombam e o rato foge';
+  } else if cat1 - mouse < cat2 - mouse {
+    return 'cat1';
   } else {
-    console.log('cat2');
+    return 'cat2';
   }
 }
-catAndMouse(10, 6, 12)
-
-
 
 // Desafio 8
 function fizzBuzz(numeros) {
@@ -84,11 +82,9 @@ function fizzBuzz(numeros) {
     } else {
       index = 'bug!';
       buzzFizz.push(index);
-
     }
   }
-
-   return buzzFizz;
+  return buzzFizz;
 }
 
 
