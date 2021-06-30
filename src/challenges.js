@@ -53,9 +53,7 @@ function highestCount(valores) {
   }
   return quantosIguais.length;
 }
-
-
-
+  
 
 
 // Desafio 7
