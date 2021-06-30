@@ -54,8 +54,6 @@ function highestCount(valores) {
   }
   return quantosIguais.length;
 }
-  
-
 
 
 
@@ -65,9 +63,19 @@ function catAndMouse() {
 }
 
 // Desafio 8
-function fizzBuzz() {
+function fizzBuzz(numeros) {
   // seu código aqui
-}
+  let buzzFizz = [];
+  for(let index of numeros){
+    if(index /3 === 3){
+      index = 'fizz';
+      buzzFizz.push(index);
+    }
+  }
+  console.log(buzzFizz);
+  }
+numeros = [2, 15, 7, 9, 45];
+fizzBuzz(numeros)
 
 // Desafio 9
 function encode() {
