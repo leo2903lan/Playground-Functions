@@ -116,19 +116,19 @@ function decode(codigo) {
   // seu código aqui
   let fraseDecodificada = [];
   for (let numero of codigo) {
-    if (numero == 1) {
+    if (numero === 1) {
       numero = 'a';
       fraseDecodificada.push(numero);
-    } else if (numero == 2) {
+    } else if (numero === 2) {
       numero = 'e';
       fraseDecodificada.push(numero);
-    } else if (numero == 3) {
+    } else if (numero === 3) {
       numero = 'i';
       fraseDecodificada.push(numero);
-    } else if (numero == 4) {
+    } else if (numero === 4) {
       numero = 'o';
       fraseDecodificada.push(numero);
-    } else if (numero == 5) {
+    } else if (numero === 5) {
       numero = 'u';
       fraseDecodificada.push(numero);
     } else {
