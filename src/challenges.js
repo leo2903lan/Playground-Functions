@@ -85,8 +85,8 @@ function fizzBuzz(numeros) {
 
 // Desafio 9
 function encode(vogais) {
-  // seu código aqui  
-  let codificado = []
+// seu código aqui
+  let codificado = [];
   for (let letra of vogais) {
     if (letra === 'a') {
       letra = 1;
@@ -108,12 +108,11 @@ function encode(vogais) {
     }
   }
   return codificado.join(''); // consegui descobrir o prototype .join() e como utilizar os parametro dele juntar os elementos da string na documentação mozilla
-};
+}
 
 function decode(codigo) {
-  // seu código aqui
+// seu código aqui
   let fraseDecodificada = [];
-
   for (let numero of codigo) {
     if (numero === '1') {
       numero = 'a';
@@ -135,7 +134,7 @@ function decode(codigo) {
     }
   }
   return fraseDecodificada.join('');
-};
+}
 
 module.exports = {
   calcArea,
