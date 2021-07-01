@@ -92,11 +92,11 @@ function fizzBuzz(numeros) {
 // Desafio 9
 function encode(vogais) {
   // seu código aqui
-  let letrasMinusculas = vogais.toLowerCase();
+  
   let codificado = []
-  for (let letra of letrasMinusculas) {
+  for (let letra of vogais) {
 
-    if (let letra === 'a') {
+    if (letra === 'a') {
       letra = 1;
       codificado.push(letra);
     } else if (letra === 'e') {
@@ -105,7 +105,7 @@ function encode(vogais) {
     } else if (letra === 'i') {
       letra = 3;
       codificado.push(letra);
-    } else if (letra === 'i') {
+    } else if (letra === 'o') {
       letra = 4;
       codificado.push(letra);
     } else if (letra === 'u') {
@@ -115,7 +115,7 @@ function encode(vogais) {
       codificado.push(letra);
     }
   }
-  return codificado.join(' '); // consegui descobrir o prototype .join() e como utilizar os parametro dele juntar os elementos da string na documentação mozilla
+  return codificado.join(''); // consegui descobrir o prototype .join() e como utilizar os parametro dele juntar os elementos da string na documentação mozilla
 }
 
 
@@ -135,7 +135,7 @@ function decode(codigo) {
       numero = 'i';
       fraseDecodificada.push(numero);
     } else if (numero == 4) {
-      numero = '0';
+      numero = 'o';
       fraseDecodificada.push(numero);
     } else if (numero == 5) {
       numero = 'u';
@@ -146,7 +146,7 @@ function decode(codigo) {
 
   }
 
-  return fraseDecodificada.join(' ');
+  return fraseDecodificada.join('');
 }
 
 
