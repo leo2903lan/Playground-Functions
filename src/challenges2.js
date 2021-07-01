@@ -1,22 +1,22 @@
 // Desafio 10
-function techList(arrayTech, name) {
+function techList(tech, name) {
   // seu código aqui
-  let objectNew = {};
-  let arrayDosObjetos = []
-  let ordem = arrayTech.sort();
-  for (let indice of ordem) {
-    if (arrayTech === 0) {
-      console.log('Vazio');
-    } else {
-      objectNew['tech'] = indice;
-      objectNew['name'] = name;
-      arrayDosObjetos.push(objectNew);
-    }
+  let newTechList = [];
+  for(let index of tech.sort()) {
+    let objetoList = {};
+    objetoList['tech'] = index;
+    objetoList['name'] = name;
+    newTechList.push(objetoList);
   }
-  return arrayDosObjetos
+     if(!newTechList.length){//informação encontrada no site cibersitemas.pt em como saber se um array está vazio usando !array.legnt para retornar um valor boleano true, caso não tenha eleementos dentro do array.
+     return 'Vazio!';
+   }else{
+    return newTechList;
+  }
 }
 
 
+techList(["React", "Jest", "HTML", "CSS", "JavaScript"],"Lucas");
 
 
 
