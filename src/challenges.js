@@ -96,7 +96,7 @@ function encode(vogais) {
   let codificado = []
   for (let letra of letrasMinusculas) {
 
-    if (letra === 'a') {
+    if (let letra === 'a') {
       letra = 1;
       codificado.push(letra);
     } else if (letra === 'e') {
@@ -124,7 +124,7 @@ function decode(codigo) {
   // seu código aqui
   let fraseDecodificada = [];
 
-  for (numero of codigo) {
+  for (let numero of codigo) {
     if (numero == 1) {
       numero = 'a';
       fraseDecodificada.push(numero);
