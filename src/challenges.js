@@ -39,10 +39,8 @@ function footballPoints(wins, ties) {
 // Desafio 6
 function highestCount(valores) {
   // seu código aqui
-
   let ordem = valores.sort((a, b) => a - b);// função encontrada na documentação, para ser utilizada dentro do .sort() para ordenar os números sem ser por UNICODE, a-b fica crescente e b-a fica descrescente.
   let quantosIguais = [];
-
   for (let index of ordem) {
     if (index === ordem[ordem.length - 1]) {
       quantosIguais.push(index);
@@ -50,8 +48,6 @@ function highestCount(valores) {
   }
   return quantosIguais.length;
 }
-
-
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
@@ -87,8 +83,6 @@ function fizzBuzz(numeros) {
   return buzzFizz;
 }
 
-
-
 // Desafio 9
 function encode(vogais) {
   // seu código aqui
@@ -118,12 +112,9 @@ function encode(vogais) {
   return codificado.join(''); // consegui descobrir o prototype .join() e como utilizar os parametro dele juntar os elementos da string na documentação mozilla
 }
 
-
-
 function decode(codigo) {
   // seu código aqui
   let fraseDecodificada = [];
-
   for (let numero of codigo) {
     if (numero == 1) {
       numero = 'a';
@@ -143,13 +134,9 @@ function decode(codigo) {
     } else {
       fraseDecodificada.push(numero);
     }
-
   }
-
   return fraseDecodificada.join('');
 }
-
-
 
 module.exports = {
   calcArea,
