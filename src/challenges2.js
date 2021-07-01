@@ -2,24 +2,18 @@
 function techList(tech, name) {
   // seu código aqui
   let newTechList = [];
-  for(let index of tech.sort()) {
+  for (let index of tech.sort()) {
     let objetoList = {};
     objetoList['tech'] = index;
     objetoList['name'] = name;
     newTechList.push(objetoList);
   }
-     if(!newTechList.length){//informação encontrada no site cibersitemas.pt em como saber se um array está vazio usando !array.legnt para retornar um valor boleano true, caso não tenha eleementos dentro do array.
-     return 'Vazio!';
-   }else{
+  if (!newTechList.length) {//informação encontrada no site cibersitemas.pt em como saber se um array está vazio usando !array.legnt para retornar um valor boleano true, caso não tenha eleementos dentro do array.
+    return 'Vazio!';
+  } else {
     return newTechList;
   }
 }
-
-
-techList(["React", "Jest", "HTML", "CSS", "JavaScript"],"Lucas");
-
-
-
 
 // Desafio 11
 function generatePhoneNumber() {
