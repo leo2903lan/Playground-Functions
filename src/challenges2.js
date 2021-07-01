@@ -2,22 +2,22 @@
 function techList(arrayTech, name) {
   // seu código aqui
   let objectNew = {};
+  let arrayDosObjetos = []
   let ordem = arrayTech.sort();
-  for(let indice of ordem){
-    if(arrayTech === 0){
+  for (let indice of ordem) {
+    if (arrayTech === 0) {
       console.log('Vazio');
     } else {
       objectNew['tech'] = indice;
       objectNew['name'] = name;
-      
+      arrayDosObjetos.push(objectNew);
+    }
   }
-  console.log(objectNew)
-  }    
-  
-}  
+  return arrayDosObjetos
+}
 
 
-techList(["React", "Jest", "HTML", "CSS", "JavaScript"], 'Lucas');
+
 
 
 
