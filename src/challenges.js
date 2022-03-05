@@ -54,11 +54,9 @@ function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
   if (mouse + mouse === cat2 + cat1) {
     return 'os gatos trombam e o rato foge';
-  } else if (cat1 - mouse < cat2 - mouse) {
+  } if (cat1 - mouse < cat2 - mouse) {
     return 'cat1';
-  } else {
-    return 'cat2';
-  }
+  } return 'cat2';
 }
 
 // Desafio 8
@@ -134,6 +132,18 @@ function decode(codigo) {
     }
   }
   return fraseDecodificada.join('');
+}
+
+function codecode(codigo) {
+  let fraseDecodificada = [];
+  switch(numero) {
+    case numero === '1': numero = 'a';
+      break;
+    case numero === '2': numero = 'e';
+      break;
+
+    
+  }
 }
 
 module.exports = {
