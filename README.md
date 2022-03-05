@@ -9,7 +9,7 @@ Todas as funções estão declaradas nos arquivos `challenges.js` e `challenges2
 ### 👀 Observações importantes:
 
 * Para verificar o funcionamento de cada função você pode instalar a extensão `code runner` no _VSCode_.
-* Utilize `console.log()` para testar as funções localmente, mas pode remover antes de fazer o push 😉.
+* Utilize `console.log()` para testar as funções localmente.
 
 ---
 
